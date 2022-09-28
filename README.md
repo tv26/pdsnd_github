@@ -10,7 +10,10 @@ This project investigates the bike share data from three places in the USA (New 
 A number of questions were answered using statistics and charts.
 
 ### Files used
-Include the files used
+The following *csv* files was used in this project:
+- chicago.csv
+- new_yory_city.csv
+- washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
