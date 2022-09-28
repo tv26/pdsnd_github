@@ -206,6 +206,26 @@ ggplot(aes(x = weekday), data = temp) +
   ylab('Number of Trips') +
   xlab('Week Day')  
 
+########################################### start - add new r code - additional change 1 ########
+# additional 1: could use the function to chart the week day counts for Chicago as follows:
+temp  <- cities3[cities3$city == "Chicago",]
+chart1(filenm=temp,var=temp$weekday,x_desc='Week Day',
+       groupby=TRUE)
+########################################### end - add new r code - additional change 1 ########
+
+########################################### start - add new r code - additional change 2 ########
+# additional 2: For comparison, lets chart the week day counts for New York:
+chart1(filenm=cities3[cities3$city == "New York",],var=cities3[cities3$city == "New York",]$weekday,x_desc='Week Day',
+       groupby=TRUE)
+########################################### end - add new r code - additional change 2 ########
+
+########################################### start - add new r code - additional change 3 ########
+# additional 3: For comparison, lets chart the week day counts for Washington:
+chart1(filenm=cities3[cities3$city == "Washington",],var=cities3[cities3$city == "Washington",]$weekday,x_desc='Week Day',
+       groupby=TRUE)
+########################################### end - add new r code - additional change 3 ########
+
+
 # create a histogram plot for the variable hour in each city 
 chart1(filenm=cities3,var=cities3$hour,bin_width=1,break_no=24,
        x_desc='Hour',groupby=TRUE)
