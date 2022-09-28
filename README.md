@@ -16,5 +16,5 @@ The following *csv* files was used in this project:
 - washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The udacity course for ***Programming for Data Science with R*** provided the data and the questions to answer.
 
